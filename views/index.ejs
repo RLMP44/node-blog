@@ -9,6 +9,18 @@
 <body>
   <%- include("partials/header.ejs")  %>
   <h3>body</h3>
+  <% if (locals.data) { %>
+    <% Object.entries(data).forEach(([title, post]) => { %>
+      <h3><%= title %></h3>
+      <p><%= post %></p>
+    <% }); %>
+  <% } %>
+
+  <form action="/" method="POST">
+    <input type="text" name="title" placeholder="Post title">
+    <input type="text" name="content" placeholder="Post content">
+    <input type="submit" value="OK">
+  </form>
 
   <%- include("partials/footer.ejs")  %>
 </body>
