@@ -1,20 +1,37 @@
 <%- include("partials/header.ejs") %>
 
-<% if (locals.data && locals.data.length >= 1) { %>
-  <% data.forEach((post, index) => { %>
-    <h3><%= post.title %></h3>
-    <p><%= post.content %></p>
-    <form action="/edit-post" method="GET">
-      <input type="hidden" value="<%= index %>" name="oldPostID">
-      <input type="submit" value="Edit">
-    </form>
+<div class="container px-4 py-3" id="custom-cards">
+  <h2 class="text-white">Blog Posts</h2>
+  <div class="col row-cols-1 align-items-stretch pb-3">
 
-    <form action="/delete" method="post">
-      <input type="hidden" value="<%= index %>" name="oldPostID">
-      <input type="submit" value="Delete">
-    </form>
-  <% }); %>
-<% } %>
+  <% if (locals.data && locals.data.length >= 1) { %>
+    <% data.forEach((post, index) => { %>
+      <div class="row my-4">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgba(0, 0, 0, 0.5);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="mb-4 display-6 lh-1 fw-bold"><%= post.title %></h3>
+            <p><%= post.content %></p>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <form action="/edit-post" method="GET">
+                  <input type="hidden" value="<%= index %>" name="oldPostID">
+                  <input type="submit" value="Edit">
+                </form>
+              </li>
+              <li class="d-flex align-items-center">
+                <form action="/delete" method="post">
+                  <input type="hidden" value="<%= index %>" name="oldPostID">
+                  <input type="submit" value="Delete">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    <% } %>
+  </div>
+</div>
 
 <form action="/" method="POST">
   <input type="text" name="title" placeholder="Post title">

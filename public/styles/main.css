@@ -1,3 +1,33 @@
 h1 {
   color: blue;
 }
+
+.header-photo-box {
+  background-image: url("/images/green-leather.jpg");
+  background-size: cover;
+  max-height: 200px;
+}
+
+.header-bar {
+  background-color: #007359;
+  width: 100vh;
+}
+
+.nav-item {
+  color: white !important;
+}
+
+body {
+  background-image: url('/images/dried-leaves-plate.jpg');
+  background-size: contain;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+}
+
+.card-cover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+}
