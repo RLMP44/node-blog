@@ -1,0 +1,10 @@
+<% if (locals.data) { %>
+  <%= data.title %>
+  <%= data.content %>
+  <form action="/edit-post" method="post">
+    <input type="text" name="newTitle" placeholder="New title">
+    <input type="text" name="newContent" placeholder="New content">
+    <input type="hidden" value="<%= id %>" name="oldPostID">
+    <input type="submit" value="Edit">
+  </form>
+<% } %>

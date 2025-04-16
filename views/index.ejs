@@ -9,10 +9,14 @@
 <body>
   <%- include("partials/header.ejs")  %>
   <h3>body</h3>
-  <% if (locals.data) { %>
-    <% Object.entries(data).forEach(([title, post]) => { %>
-      <h3><%= title %></h3>
-      <p><%= post %></p>
+  <% if (locals.data && locals.data.length >= 1) { %>
+    <% data.forEach((post, index) => { %>
+      <h3><%= post.title %></h3>
+      <p><%= post.content %></p>
+      <form action="/edit-post" method="GET">
+        <input type="hidden" value="<%= index %>" name="oldPostID">
+        <input type="submit" value="Edit">
+      </form>
     <% }); %>
   <% } %>
 
