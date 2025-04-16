@@ -1,11 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import methodOverride from "method-override";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use(methodOverride("_method"));
 app.use(express.static('public'));
 app.use(express.json());
