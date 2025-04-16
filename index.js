@@ -31,6 +31,11 @@ app.post('/edit-post', (req, res) => {
   res.render('index.ejs', { data: posts });
 })
 
+app.post('/delete', (req, res) => {
+  posts.splice(req.body.oldPostID, 1)
+  res.render('index.ejs', { data: posts });
+})
+
 app.get('/bio', (req, res) => {
   res.render('bio.ejs');
 })

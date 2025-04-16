@@ -17,6 +17,11 @@
         <input type="hidden" value="<%= index %>" name="oldPostID">
         <input type="submit" value="Edit">
       </form>
+
+      <form action="/delete" method="post">
+        <input type="hidden" value="<%= index %>" name="oldPostID">
+        <input type="submit" value="Delete">
+      </form>
     <% }); %>
   <% } %>
 
