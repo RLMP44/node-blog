@@ -1,11 +1,17 @@
-h1 {
-  color: blue;
+.island-moments-regular {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header-photo-box {
   background-image: url("/images/green-leather.jpg");
   background-size: cover;
   max-height: 200px;
+}
+
+.header-text {
+  font-size: 6rem;
 }
 
 .header-bar {
@@ -17,11 +23,25 @@ h1 {
   color: white !important;
 }
 
+.nav-text {
+  font-size: 1.7rem;
+  padding: 0rem 6vw;
+}
+
+.custom-nav {
+  padding: 0rem .5rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 body {
   background-image: url('/images/dried-leaves-plate.jpg');
   background-size: contain;
   background-attachment: fixed;
-  /* background-repeat: no-repeat; */
 }
 
 .card-cover {
