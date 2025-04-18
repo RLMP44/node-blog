@@ -1,5 +1,23 @@
 <%- include("partials/header.ejs")  %>
 
-<h1>Published Works</h1>
+<div class="container px-4 py-3" id="custom-cards">
+  <h2 class="text-white">Published Works</h2>
+  <div class="col row-cols-1 align-items-stretch pb-3">
+
+  <% if (locals.data && locals.data.length >= 1) { %>
+    <% data.forEach((work, index) => { %>
+      <div class="row my-4">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgba(0, 0, 0, 0.5);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="mb-4 display-6 lh-1 fw-bold"><%= work.title %></h3>
+            <p><%= work.excerpt %></p>
+            <a href="<%= work.url %>"></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    <% } %>
+  </div>
 
 <%- include("partials/footer.ejs")  %>

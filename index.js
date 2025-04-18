@@ -32,6 +32,16 @@ var posts = [
   }
 ]
 
+var works = [
+  {
+    title: "The Witness Brûska Lai",
+    picture: "",
+    excerpt: "Brûska Lai was not particularly tall or short, wide or thin. Aside from her name, there was nothing distinctive about her—except her ability to look into the eyes of the dead and note their time of death down to the minute.",
+    link: "https://www.beneath-ceaseless-skies.com/stories/the-witness-bruska-lai/",
+    publisher: "Beneath Ceaseless Skies"
+  }
+]
+
 app.get('/', (req, res) => {
   res.render('index.ejs', { data: posts });
 })
@@ -61,7 +71,7 @@ app.get('/bio', (req, res) => {
 })
 
 app.get('/works', (req, res) => {
-  res.render('works.ejs');
+  res.render('works.ejs', { data: works });
 })
 
 app.get('/contact', (req, res) => {
