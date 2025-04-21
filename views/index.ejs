@@ -11,17 +11,17 @@
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="mb-4 display-6 lh-1 fw-bold"><%= post.title %></h3>
             <p><%= post.description %></p>
-            <ul class="d-flex list-unstyled mt-auto">
+            <ul class="d-flex list-unstyled mt-auto" style="justify-content: flex-end;">
               <li class="d-flex align-items-center me-3">
                 <form action="/edit-post" method="GET">
                   <input type="hidden" value="<%= index %>" name="oldPostID">
-                  <input type="submit" value="Edit">
+                  <input type="submit" value="Edit✎" class="edit-button">
                 </form>
               </li>
               <li class="d-flex align-items-center">
                 <form action="/delete" method="post">
                   <input type="hidden" value="<%= index %>" name="oldPostID">
-                  <input type="submit" value="Delete">
+                  <input type="submit" value="Delete🗑️" class="delete-button">
                 </form>
               </li>
             </ul>
