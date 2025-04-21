@@ -81,3 +81,10 @@ app.get('/contact', (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 })
+
+// app.patch('/', (req, res) => {
+//   console.log('hi');
+//   console.log(req.body.oldTitle);
+//   console.log(req.body.oldContent);
+//   res.render('index.ejs', { data: posts });
+// });

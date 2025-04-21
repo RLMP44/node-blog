@@ -5,9 +5,8 @@
 }
 
 .header-photo-box {
-  background-image: url("/images/green-leather.jpg");
-  background-size: cover;
   max-height: 200px;
+  background-color: rgb(13,13,13);
 }
 
 .header-text {
@@ -16,7 +15,7 @@
 
 .header-bar {
   background-color: #007359;
-  width: 100vh;
+  width: 100%;
 }
 
 .nav-item {
@@ -39,8 +38,8 @@
 }
 
 body {
-  background-image: url('/images/dried-leaves-plate.jpg');
-  background-size: contain;
+  background-image: url('/images/ink.jpeg');
+  background-size: cover;
   background-attachment: fixed;
 }
 
