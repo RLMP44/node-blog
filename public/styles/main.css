@@ -16,10 +16,17 @@
 .header-bar {
   background-color: #007359;
   width: 100%;
+  box-shadow: inset 0px 0px 10px 0px black;
 }
 
 .nav-item {
   color: white !important;
+}
+
+.nav-item:hover {
+  text-decoration: underline !important;
+  text-decoration-color: #ab9336 !important;
+  text-decoration-thickness: 10% !important;
 }
 
 .nav-text {
