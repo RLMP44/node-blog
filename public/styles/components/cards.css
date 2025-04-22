@@ -5,3 +5,12 @@
 .card {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.main-card {
+  box-shadow: inset -1px -1px 30px -10px #b6b4b4 !important;
+}
+
+.main-card:hover {
+  box-shadow: inset -1px -10px 40px -10px #b6b4b4 !important;
+  transition: .4s;
+}
