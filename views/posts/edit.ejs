@@ -1,0 +1,19 @@
+<%- include("../partials/header.ejs")  %>
+
+<div class="container px-4 py-3" id="custom-cards">
+  <h2 class="text-white">Edit post</h2>
+    <% if (locals.data) { %>
+      <form action="/posts/edit" method="post">
+        <p class="text-white"><strong><%= data.title %></strong></p>
+        <textarea type="text" name="newTitle" placeholder="New title" class="form-input input-control"></textarea>
+        <p class="text-white"><%= data.description %></p>
+        <textarea type="text" name="newDescription" placeholder="New description" class="form-input input-control"></textarea>
+        <p class="text-white"><%= data.content %></p>
+        <textarea type="text" name="newContent" placeholder="New content" class="form-content input-control"></textarea>
+        <input type="hidden" value="<%= id %>" name="oldPostID">
+        <input type="submit" value="Save">
+      </form>
+    <% } %>
+</div>
+
+<%- include("../partials/footer.ejs")  %>

@@ -13,15 +13,9 @@
             <p><%= post.description %></p>
             <ul class="d-flex list-unstyled mt-auto" style="justify-content: flex-end;">
               <li class="d-flex align-items-center me-3">
-                <form action="/edit-post" method="GET">
+                <form action="/posts/show" method="GET">
                   <input type="hidden" value="<%= index %>" name="oldPostID">
-                  <input type="submit" value="Edit" class="edit-button">
-                </form>
-              </li>
-              <li class="d-flex align-items-center">
-                <form action="/delete" method="post">
-                  <input type="hidden" value="<%= index %>" name="oldPostID">
-                  <input type="submit" value="Delete" class="delete-button">
+                  <input type="submit" value="Read More..." class="edit-button">
                 </form>
               </li>
             </ul>
@@ -30,13 +24,17 @@
       </div>
       <% }); %>
     <% } %>
+    <br><br>
+    <div class="border-top">
+      <form action="/" method="POST" class="pt-5">
+        <textarea type="text" name="title" placeholder="Post title" class="form-input input-control"></textarea>>
+        <textarea type="text" name="description" placeholder="Post description" class="form-input input-control"></textarea>>
+        <textarea type="text" name="content" placeholder="Post content" class="form-content input-control"></textarea>>
+        <input type="submit" value="Publish" class="edit-button" style="justify-content: flex-end;">
+      </form>
+    </div>
   </div>
-  <form action="/" method="POST">
-    <input type="text" name="title" placeholder="Post title">
-    <input type="text" name="description" placeholder="Post description">
-    <input type="text" name="content" placeholder="Post content">
-    <input type="submit" value="OK">
-  </form>
-</div>
+
+
 
 <%- include("partials/footer.ejs") %>

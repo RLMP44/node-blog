@@ -3,17 +3,12 @@ import bodyParser from 'body-parser';
 import methodOverride from "method-override";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
-app.use(methodOverride("_method"));
-app.use(express.static('public'));
-app.use(express.json());
-
+//  ------------------ SEEDS --------------------
 var posts = [
   {
     title: "Lorem ipsum dolor sit amet",
@@ -42,6 +37,14 @@ var works = [
   }
 ]
 
+//  ------------------ MIDDLEWARE --------------------
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use(methodOverride("_method"));
+app.use(express.static('public'));
+app.use(express.json());
+
+//  ------------------ ROUTES --------------------
 app.get('/', (req, res) => {
   res.render('index.ejs', { data: posts });
 })
@@ -51,14 +54,18 @@ app.post('/', (req, res) => {
   res.render('index.ejs', { data: posts });
 });
 
-app.get('/edit-post', (req, res) => {
-  res.render('edit-post.ejs', { data: posts[req.query.oldPostID], id: req.query.oldPostID });
+app.get('/posts/edit', (req, res) => {
+  res.render('posts/edit.ejs', { data: posts[req.query.oldPostID], id: req.query.oldPostID });
 });
 
-app.post('/edit-post', (req, res) => {
+app.post('/posts/edit', (req, res) => {
   const input = { title: req.body.newTitle, content: req.body.newContent, description: req.body.newDescription }
   posts[req.body.oldPostID] = input;
   res.render('index.ejs', { data: posts });
+})
+
+app.get('/posts/show', (req, res) => {
+  res.render('posts/show.ejs', { data: posts[req.query.oldPostID], id: req.query.oldPostID });
 })
 
 app.post('/delete', (req, res) => {
