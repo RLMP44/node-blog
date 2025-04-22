@@ -1,0 +1,27 @@
+.delete-button {
+  background-color: #df3400;
+  color: black;
+  border-radius: 9px;
+  border: none;
+  padding: 5px 9px;
+  box-shadow: inset 0px 0px 10px 0px black;
+}
+
+.delete-button:hover {
+  box-shadow: inset 0px 0px 20px 0px #df3400;
+  transition: .5s;
+}
+
+.main-button {
+  background-color: #007359;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  padding: 5px 9px;
+  box-shadow: inset 0px 0px 10px 0px black;
+}
+
+.main-button:hover {
+  box-shadow: inset 0px 0px 20px 0px #007359;
+  transition: .5s;
+}

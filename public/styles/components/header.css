@@ -1,0 +1,14 @@
+.header-photo-box {
+  max-height: 200px;
+  background-color: rgb(13,13,13);
+}
+
+.header-text {
+  font-size: 6rem;
+}
+
+.header-bar {
+  background-color: #007359;
+  width: 100%;
+  box-shadow: inset 0px 0px 10px 0px black;
+}

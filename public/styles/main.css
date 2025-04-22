@@ -1,105 +1,17 @@
+@import 'components/buttons.css';
+@import 'components/forms.css';
+@import 'components/cards.css';
+@import 'components/header.css';
+@import 'components/nav-bar.css';
+
 .island-moments-regular {
   font-family: "Island Moments", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-.header-photo-box {
-  max-height: 200px;
-  background-color: rgb(13,13,13);
-}
-
-.header-text {
-  font-size: 6rem;
-}
-
-.header-bar {
-  background-color: #007359;
-  width: 100%;
-  box-shadow: inset 0px 0px 10px 0px black;
-}
-
-.nav-item {
-  color: white !important;
-}
-
-.nav-item:hover {
-  text-decoration: underline !important;
-  text-decoration-color: #ab9336 !important;
-  text-decoration-thickness: 10% !important;
-}
-
-.nav-text {
-  font-size: 1.7rem;
-  padding: 0rem 6vw;
-}
-
-.custom-nav {
-  padding: 0rem .5rem;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
 body {
   background-image: url('/images/ink.jpeg');
   background-size: cover;
   background-attachment: fixed;
-}
-
-.card-cover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.card {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.delete-button {
-  background-color: #df3400;
-  color: black;
-  border-radius: 9px;
-  border: none;
-  padding: 5px 9px;
-  box-shadow: inset 0px 0px 10px 0px black;
-}
-
-.edit-button {
-  background-color: #007359;
-  color: white;
-  border-radius: 9px;
-  border: none;
-  padding: 5px 9px;
-  box-shadow: inset 0px 0px 10px 0px black;
-}
-
-.edit-button:hover {
-  box-shadow: inset 0px 0px 20px 0px #007359;
-  transition: .5s;
-}
-
-.delete-button:hover {
-  box-shadow: inset 0px 0px 20px 0px #df3400;
-  transition: .5s;
-}
-
-.form-input {
-  width: 100%;
-  height: 2rem;
-  background-color: white;
-  box-shadow: inset 1px 1px 3px black;
-  border: none;
-  border-radius: 4px;
-}
-
-.form-content {
-  width: 100%;
-  height: 15rem;
-  background-color: white;
-  box-shadow: inset 1px 1px 3px black;
-  border: none;
-  border-radius: 4px;
 }

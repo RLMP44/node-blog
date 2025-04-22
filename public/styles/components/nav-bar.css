@@ -1,0 +1,24 @@
+.nav-item {
+  color: white !important;
+}
+
+.nav-item:hover {
+  text-decoration: underline !important;
+  text-decoration-color: #ab9336 !important;
+  text-decoration-thickness: 10% !important;
+}
+
+.nav-text {
+  font-size: 1.7rem;
+  padding: 0rem 6vw;
+}
+
+.custom-nav {
+  padding: 0rem .5rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
