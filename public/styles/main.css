@@ -59,11 +59,11 @@
 }
 
 body {
-  background-image: url('/images/ink.jpeg');
+  background-image: url('/images/ink3.jpeg');
   background-size: cover;
   background-attachment: fixed;
 }
 
-h1, h2, h3, p, li, a, form {
+h1, h2, h3, h5, p, li, a, form {
   font-family: "Cormorant Unicase", serif;
 }
