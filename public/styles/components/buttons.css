@@ -5,10 +5,11 @@
   border: none;
   padding: 5px 9px;
   box-shadow: inset 0px 0px 10px 0px black;
+  margin-top: .6rem;
 }
 
 .delete-button:hover {
-  box-shadow: inset 0px 0px 20px 0px #df3400;
+  box-shadow: inset 0px 0px 20px 0px #661800;
   transition: .5s;
 }
 
@@ -19,9 +20,10 @@
   border: none;
   padding: 5px 9px;
   box-shadow: inset 0px 0px 10px 0px black;
+  margin-top: .6rem;
 }
 
 .main-button:hover {
-  box-shadow: inset 0px 0px 20px 0px #007359;
+  box-shadow: inset 0px 0px 20px 0px #00281e;
   transition: .5s;
 }
