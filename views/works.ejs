@@ -11,9 +11,15 @@
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="mb-4 display-6 lh-1 fw-bold"><%= work.title %></h3>
             <p><%= work.excerpt %></p>
+            <p>Published by: <%= work.publisher %></p>
             <a href="<%= work.url %>"></a>
             </ul>
           </div>
+          <ul class="d-flex list-unstyled mt-auto" style="justify-content: flex-end;">
+            <li class="d-flex align-items-center me-3">
+              <button class="main-button" href="#">View on Amazon</button>
+            </li>
+          </ul>
         </div>
       </div>
       <% }); %>
