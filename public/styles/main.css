@@ -67,3 +67,47 @@ body {
 h1, h2, h3, h5, p, li, a, form {
   font-family: "Cormorant Unicase", serif;
 }
+
+@media screen and (min-width: 650px) and (max-width: 767.9px) {
+  .header-text {
+    font-size: 5rem;
+  }
+
+  .header-photo-box {
+    max-height: 11rem;
+  }
+
+  .nav-text {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .header-text {
+    font-size: 5rem;
+  }
+
+  .header-photo-box {
+    max-height: 11rem;
+  }
+
+  .nav-text {
+    font-size: 1.2rem !important;
+    padding: 0vw 4vw;
+  }
+}
+
+@media screen and (max-width: 499.9px) {
+  .header-text {
+    font-size: 3rem;
+  }
+
+  .header-photo-box {
+    height: 22vh;
+  }
+
+  .nav-text {
+    font-size: 1rem !important;
+    padding: 0vw 3vw;
+  }
+}
