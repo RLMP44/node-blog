@@ -14,3 +14,7 @@
   box-shadow: inset -1px -5px 40px -10px #b6b4b4 !important;
   transition: .7s;
 }
+
+.main-container {
+  box-shadow: inset -1px -1px 30px -10px #b6b4b4 !important;
+}
