@@ -5,7 +5,10 @@
     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgba(0, 0, 0, 0.5);">
       <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
         <h3 class="mb-4 display-6 lh-1 fw-bold"><%= data.title %></h3>
-        <p><%= data.content %></p>
+          <% data.content.forEach((paragraph) => { %>
+            <p class="text-white"><%= paragraph  %></p>
+            <br>
+          <% }) %>
         <ul class="d-flex list-unstyled mt-auto" style="justify-content: flex-end;">
           <li class="d-flex align-items-center me-3">
             <form action="/posts/edit" method="GET">

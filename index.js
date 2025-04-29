@@ -71,50 +71,50 @@ app.listen(port, () => {
 var posts = [
   {
     title: "The Whispering Stones",
-    content: `Elara had always felt an odd connection to the stones of her village, Atheria. They weren't just rocks; they hummed with a faint energy, a silent song. One day, exploring the overgrown ruins behind her home, she stumbled upon a hidden cave. Inside, the stones pulsed with a vibrant light, their whispers audible."Welcome, child," one resonated, its voice like ancient wind. "We are the Keepers of Memory."
+    content: [`Elara had always felt an odd connection to the stones of her village, Atheria. They weren't just rocks; they hummed with a faint energy, a silent song. One day, exploring the overgrown ruins behind her home, she stumbled upon a hidden cave. Inside, the stones pulsed with a vibrant light, their whispers audible."Welcome, child," one resonated, its voice like ancient wind. "We are the Keepers of Memory."`,
 
-    Elara, initially frightened, soon found herself captivated. The stones showed her visions – Atheria's past, stretching back centuries. She saw the village's founding, the joys and sorrows of its people, forgotten tales of bravery and betrayal. With each touch, a new story unfolded. One stone revealed the legend of a hidden spring, said to grant eternal life, but lost to time. Another whispered of a great betrayal, a feud that divided the village for generations, its roots now buried under layers of tradition.
+    `Elara, initially frightened, soon found herself captivated. The stones showed her visions – Atheria's past, stretching back centuries. She saw the village's founding, the joys and sorrows of its people, forgotten tales of bravery and betrayal. With each touch, a new story unfolded. One stone revealed the legend of a hidden spring, said to grant eternal life, but lost to time. Another whispered of a great betrayal, a feud that divided the village for generations, its roots now buried under layers of tradition.`,
 
-    The stones warned her, too. "The balance is fragile," one rumbled. "The world of whispers and the world of flesh must remain separate. Too much knowledge can be a burden."
+    `The stones warned her, too. "The balance is fragile," one rumbled. "The world of whispers and the world of flesh must remain separate. Too much knowledge can be a burden."`,
 
-    Elara, however, was drawn deeper. She spent days in the cave, neglecting her chores, her friends. She learned of a looming darkness, a shadow that had touched Atheria before and threatened to return. The stones grew more urgent.
+    `Elara, however, was drawn deeper. She spent days in the cave, neglecting her chores, her friends. She learned of a looming darkness, a shadow that had touched Atheria before and threatened to return. The stones grew more urgent.`,
 
-    "You are the Listener," they told her. "You must choose. Will you be a bridge, or a barrier?"
+    `"You are the Listener," they told her. "You must choose. Will you be a bridge, or a barrier?"`,
 
-    Torn, Elara confided in her grandmother, the village elder, who listened with knowing eyes. "The stones speak truth," she confirmed. "But their knowledge is a river, not a cup. You cannot hold it all."
+    `Torn, Elara confided in her grandmother, the village elder, who listened with knowing eyes. "The stones speak truth," she confirmed. "But their knowledge is a river, not a cup. You cannot hold it all."`,
 
-    Elara realized her mistake. She had been trying to possess the stones' power, not understand it. With her grandmother's guidance, she learned to listen with wisdom, to discern the important whispers from the echoes of time.
+    `Elara realized her mistake. She had been trying to possess the stones' power, not understand it. With her grandmother's guidance, she learned to listen with wisdom, to discern the important whispers from the echoes of time.`,
 
-    She shared carefully chosen stories with the village, weaving them into their traditions, reminding them of their past and warning them of the encroaching darkness. She became a storyteller, a guardian of memory, not its master.
+    `She shared carefully chosen stories with the village, weaving them into their traditions, reminding them of their past and warning them of the encroaching darkness. She became a storyteller, a guardian of memory, not its master.`,
 
-    The village, armed with this knowledge, prepared. When the shadow returned, they met it not with fear, but with the strength of their shared history, the wisdom of the whispering stones echoing in their hearts. Elara, the Listener, stood with them, a bridge between the past and the present, ensuring the whispers of the stones would never be forgotten."`,
+    `The village, armed with this knowledge, prepared. When the shadow returned, they met it not with fear, but with the strength of their shared history, the wisdom of the whispering stones echoing in their hearts. Elara, the Listener, stood with them, a bridge between the past and the present, ensuring the whispers of the stones would never be forgotten."`],
     description: "A young woman who discovers hidden world beneath her sleepy village, a world where stones hold memories and whispers carry magic."
   },
   {
     title: "The Stone Carver's Daughter",
-    content: `In a village nestled beside a mountain range of sentient stone, a young woman named Lyra is apprenticed to her father, a master stone carver. The stones communicate in whispers, guiding his hands as he shapes them into objects of power and beauty. Lyra, however, is deaf to the whispers. She can feel the stones' vibrations, sense their emotions, but cannot understand their language.
+    content: [`In a village nestled beside a mountain range of sentient stone, a young woman named Lyra is apprenticed to her father, a master stone carver. The stones communicate in whispers, guiding his hands as he shapes them into objects of power and beauty. Lyra, however, is deaf to the whispers. She can feel the stones' vibrations, sense their emotions, but cannot understand their language.`,
 
-    Desperate to connect with her heritage and her father, Lyra seeks out a reclusive hermit who lives high in the mountains, said to possess the ability to translate the stones' whispers. The hermit agrees to help, but his methods are unconventional, involving ancient rituals and a dangerous journey into the heart of the mountain itself.
+    `Desperate to connect with her heritage and her father, Lyra seeks out a reclusive hermit who lives high in the mountains, said to possess the ability to translate the stones' whispers. The hermit agrees to help, but his methods are unconventional, involving ancient rituals and a dangerous journey into the heart of the mountain itself.`,
 
-    Lyra's journey is one of self-discovery, as she confronts her own limitations and learns to appreciate the different ways in which the stones can be understood. She discovers that while she may not hear their words, she has a unique gift for interpreting their feelings and intentions, a gift that ultimately proves to be just as valuable.`,
+    `Lyra's journey is one of self-discovery, as she confronts her own limitations and learns to appreciate the different ways in which the stones can be understood. She discovers that while she may not hear their words, she has a unique gift for interpreting their feelings and intentions, a gift that ultimately proves to be just as valuable.`],
     description: `In a village nestled beside a mountain range of sentient stone, a young woman named Lyra is apprenticed to her father, a master stone carver. The stones communicate in whispers, guiding his hands as he shapes them into objects of power and beauty. Lyra, however, is deaf to the whispers. She can feel the stones' vibrations, sense their emotions, but cannot understand their language.`
   },
   {
     title: "The Lost Song of the Ancients",
-    content: `A scholar named Elias discovers an ancient map leading to a hidden island, rumored to be the resting place of the "Songstones" – artifacts said to contain the memories and knowledge of a long-lost civilization. Driven by a thirst for knowledge, Elias assembles a crew and sets sail, unaware of the dangers that await him.
+    content: [`A scholar named Elias discovers an ancient map leading to a hidden island, rumored to be the resting place of the "Songstones" – artifacts said to contain the memories and knowledge of a long-lost civilization. Driven by a thirst for knowledge, Elias assembles a crew and sets sail, unaware of the dangers that await him.`,
 
-    The island is shrouded in mist and mystery, its landscape constantly shifting and changing. The Songstones, when found, are not inert objects but resonate with a powerful, alluring music that can entrance and corrupt those who listen for too long.
+    `The island is shrouded in mist and mystery, its landscape constantly shifting and changing. The Songstones, when found, are not inert objects but resonate with a powerful, alluring music that can entrance and corrupt those who listen for too long.`,
 
-    Elias and his crew are forced to confront not only the island's magical defenses but also their own desires and ambitions as the Songstones' music begins to unravel their deepest selves. The story explores the seductive nature of forbidden knowledge and the importance of respecting the boundaries between the known and the unknown.`,
+    `Elias and his crew are forced to confront not only the island's magical defenses but also their own desires and ambitions as the Songstones' music begins to unravel their deepest selves. The story explores the seductive nature of forbidden knowledge and the importance of respecting the boundaries between the known and the unknown.`],
     description: `A scholar named Elias discovers an ancient map leading to a hidden island, rumored to be the resting place of the "Songstones" – artifacts said to contain the memories and knowledge of a long-lost civilization. Driven by a thirst for knowledge, Elias assembles a crew and sets sail, unaware of the dangers that await him.`
   },
   {
     title: "The Stone Walker",
-    content: `In a nomadic tribe that roams a vast desert of sentient stones, a young man named Kael is chosen to become a "Stone Walker" – one who can navigate the treacherous landscape by listening to the stones' whispers. However, Kael is plagued by doubt. He struggles to hear the stones clearly, their voices often conflicting and confusing.
+    content: [`In a nomadic tribe that roams a vast desert of sentient stones, a young man named Kael is chosen to become a "Stone Walker" – one who can navigate the treacherous landscape by listening to the stones' whispers. However, Kael is plagued by doubt. He struggles to hear the stones clearly, their voices often conflicting and confusing.`,
 
-    During his training, Kael discovers a hidden talent – he can not only hear the stones but also influence them, subtly altering their paths and shaping the desert itself. This power is both a gift and a curse, as he learns that the desert is a living entity with its own ancient consciousness, and his actions have far-reaching consequences.
+    `During his training, Kael discovers a hidden talent – he can not only hear the stones but also influence them, subtly altering their paths and shaping the desert itself. This power is both a gift and a curse, as he learns that the desert is a living entity with its own ancient consciousness, and his actions have far-reaching consequences.`,
 
-    Kael's journey is a coming-of-age story that delves into themes of responsibility, destiny, and the interconnectedness of all things. He must learn to master his abilities and find his place within the complex web of relationships that bind his tribe, the desert, and the whispering stones.`,
+    `Kael's journey is a coming-of-age story that delves into themes of responsibility, destiny, and the interconnectedness of all things. He must learn to master his abilities and find his place within the complex web of relationships that bind his tribe, the desert, and the whispering stones.`],
     description: `In a nomadic tribe that roams a vast desert of sentient stones, a young man named Kael is chosen to become a "Stone Walker" – one who can navigate the treacherous landscape by listening to the stones' whispers.`
   }
 ]

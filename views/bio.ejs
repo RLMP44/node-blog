@@ -4,7 +4,12 @@
   <h2 class="text-white">Biography</h2>
   <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgba(0, 0, 0, 0.5);">
     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-      <p class="text-white"><%= locals.data  %></p>
+      <% if (locals.data) { %>
+        <% locals.data.forEach((paragraph) => { %>
+          <p class="text-white"><%= paragraph  %></p>
+          <br>
+        <% }) %>
+      <% } %>
     </div>
   </div>
 </div>
