@@ -99,6 +99,10 @@ p {
     font-size: 1.2rem !important;
     padding: 0vw 4vw;
   }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 499.9px) {
@@ -113,5 +117,9 @@ p {
   .nav-text {
     font-size: 1rem !important;
     padding: 0vw 3vw;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
